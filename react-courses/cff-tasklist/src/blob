@@ -1,0 +1,31 @@
+reactDOM.render(what to render, where to render)
+
+so the div segmant in index.html is basically where all our writtten code in gonna be stuck into. when we wrote where to render the 
+things, it should be pointing to this div segmant. For this were gonna use document.getElemntbyId("root")
+
+JSX is like a version of js for HTML/ whatever we write in jsx will all boil down to vanilla JS and that's why we need the React imported.
+ as it does the work under the hood
+
+
+ Lifecycle method:
+ render() method can be called anytime. React can call render anytime it determines osmething is changing that effects how the components is changing
+ 2) componenDidMount() {
+    its like saying you were just born
+ }
+
+ 3) shouldComponentUpdate(nextProps, nextState){
+    its answers if the component should rerender
+ it gives us a chance to optimize our app
+ }
+
+ 4) componentWillUnmount() {
+    it makes component disappear from the screeen
+ }
+
+ 5) static getDerivedStateFromProps(props, state){
+    return  the new updated state based upon the props
+ }
+
+ 6) getSnapshotBeforeUpdate(){
+    having an backup of current data before updating it
+ }
